@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #03dfff;
+    background: linear-gradient(139deg,#e56809cb 0%, #Fff 45%,#32a525b6 95%);
+}
+.container{
+    position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 20px 40px;
+}
+h1{
+    margin: 50px ;
+    text-align: center;
+    color:#862f0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    text-shadow: #971313;
+    
+}
+.addTask{
+    width: 120%;
+    display: flex;
+    padding: 10px 200px;
+    margin: -100px 150px;
+}
+.addTask > input[type="text"]{
+    width: 90%;
+    color: #140f04;
+    box-shadow:5px 5px 5px rgb(54, 106, 158) ;
+    border:3px solid #007bff;
+    border-radius: 20px 20px 20px;
+    background-color: #007bff;
+    border-radius: 0px 4px 8px rgba(0, 0, 0, o.2);
+    background: #fff;
+    padding: 9px;
+    font-size: 22px;
+    outline: none;
+    margin: 100px 150px ;
+
+}
+.addTask button{
+    margin: 100px -249px -50px;
+    background: #060206;
+    color: #bdcbd5;
+    width: 100px;
+    height:50px;
+    font-size: 18px;
+    text-transform: initial;
+    padding: 10px;
+    border: 2px solid #007bff;
+    outline: #00ff62;
+    border-radius: 0px 15px 20px;
+    cursor: pointer;
+    
+
+}
+.notCompleted, .Completed{
+    margin: 0px 100px;
+    padding: 3px;
+    color: #092951;
+    text-transform: initial;
+}
+h3{
+    font-size: 35px;
+    text-transform: initial;
+    text-align: right;
+    margin: 40px -120px 50px;
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 15px 15px 15px;
+    color: #2f22c1 ;
+    
+}
+ol{
+    list-style: none; 
+}
+ol li{
+    width: 80%;
+    padding: 3px;
+    margin:5px 380px;
+    background: #efb1a0bb;
+    font-size: 28px;
+    color: #070107;
+    counter-increment: my-counter;
+}
+ol.Completed li{
+    background: #3cc130;
+    margin-top: 10px 0;
+
+}
+ol li::before{
+    content: counter(my-counter);
+    background: #0d034a;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
